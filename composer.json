@@ -1,0 +1,27 @@
+{
+    "name": "uzzaircode/math",
+    "description": "a math package for cmf",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Uzzair Baharudin",
+            "email": "uzzaircode@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+           "Uzzaircode\\Math\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Uzzaircode\\Math\\MathServiceProvider"
+            ]
+        }
+    }    
+ 
+}

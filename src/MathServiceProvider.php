@@ -29,5 +29,9 @@ class MathServiceProvider extends ServiceProvider
         $this->app->alias(Math::class, 'math');
         include __DIR__.'/routes/web.php';
         $this->app->make('Uzzaircode\Math\MathController');
+        $this->publishes([
+            __DIR__.'/views' => base_path('resources/views/math'),
+            __DIR__.'/migrations' => base_path('database/migrations'),
+        ]);
     }
 }

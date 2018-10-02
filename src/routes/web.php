@@ -5,4 +5,3 @@ Route::group(['prefix'=>'math','namespace'=>'Uzzaircode\Math'],function(){
     Route::get('/{a}/{b}','MathController@multiply');
 });
 
-// 
